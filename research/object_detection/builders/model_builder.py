@@ -62,8 +62,8 @@ if tf_version.is_tf2():
   from object_detection.models.ssd_mobilenet_v2_fpn_keras_feature_extractor import SSDMobileNetV2FpnKerasFeatureExtractor
   from object_detection.models.ssd_mobilenet_v2_keras_feature_extractor import SSDMobileNetV2KerasFeatureExtractor
   from object_detection.predictors import rfcn_keras_box_predictor
-  if sys.version_info[0] >= 3:
-    from object_detection.models import ssd_efficientnet_bifpn_feature_extractor as ssd_efficientnet_bifpn
+  #if sys.version_info[0] >= 3:
+   # from object_detection.models import ssd_efficientnet_bifpn_feature_extractor as ssd_efficientnet_bifpn
 
 if tf_version.is_tf1():
   from object_detection.models import faster_rcnn_inception_resnet_v2_feature_extractor as frcnn_inc_res
@@ -105,22 +105,22 @@ if tf_version.is_tf2():
           ssd_resnet_v1_fpn_keras.SSDResNet101V1FpnKerasFeatureExtractor,
       'ssd_resnet152_v1_fpn_keras':
           ssd_resnet_v1_fpn_keras.SSDResNet152V1FpnKerasFeatureExtractor,
-      'ssd_efficientnet-b0_bifpn_keras':
-          ssd_efficientnet_bifpn.SSDEfficientNetB0BiFPNKerasFeatureExtractor,
-      'ssd_efficientnet-b1_bifpn_keras':
-          ssd_efficientnet_bifpn.SSDEfficientNetB1BiFPNKerasFeatureExtractor,
-      'ssd_efficientnet-b2_bifpn_keras':
-          ssd_efficientnet_bifpn.SSDEfficientNetB2BiFPNKerasFeatureExtractor,
-      'ssd_efficientnet-b3_bifpn_keras':
-          ssd_efficientnet_bifpn.SSDEfficientNetB3BiFPNKerasFeatureExtractor,
-      'ssd_efficientnet-b4_bifpn_keras':
-          ssd_efficientnet_bifpn.SSDEfficientNetB4BiFPNKerasFeatureExtractor,
-      'ssd_efficientnet-b5_bifpn_keras':
-          ssd_efficientnet_bifpn.SSDEfficientNetB5BiFPNKerasFeatureExtractor,
-      'ssd_efficientnet-b6_bifpn_keras':
-          ssd_efficientnet_bifpn.SSDEfficientNetB6BiFPNKerasFeatureExtractor,
-      'ssd_efficientnet-b7_bifpn_keras':
-          ssd_efficientnet_bifpn.SSDEfficientNetB7BiFPNKerasFeatureExtractor,
+     # 'ssd_efficientnet-b0_bifpn_keras':
+      #    ssd_efficientnet_bifpn.SSDEfficientNetB0BiFPNKerasFeatureExtractor,
+     # 'ssd_efficientnet-b1_bifpn_keras':
+      #    ssd_efficientnet_bifpn.SSDEfficientNetB1BiFPNKerasFeatureExtractor,
+     # 'ssd_efficientnet-b2_bifpn_keras':
+      #    ssd_efficientnet_bifpn.SSDEfficientNetB2BiFPNKerasFeatureExtractor,
+     # 'ssd_efficientnet-b3_bifpn_keras':
+      #    ssd_efficientnet_bifpn.SSDEfficientNetB3BiFPNKerasFeatureExtractor,
+     # 'ssd_efficientnet-b4_bifpn_keras':
+      #    ssd_efficientnet_bifpn.SSDEfficientNetB4BiFPNKerasFeatureExtractor,
+     # 'ssd_efficientnet-b5_bifpn_keras':
+      #    ssd_efficientnet_bifpn.SSDEfficientNetB5BiFPNKerasFeatureExtractor,
+     # 'ssd_efficientnet-b6_bifpn_keras':
+      #    ssd_efficientnet_bifpn.SSDEfficientNetB6BiFPNKerasFeatureExtractor,
+     # 'ssd_efficientnet-b7_bifpn_keras':
+      #    ssd_efficientnet_bifpn.SSDEfficientNetB7BiFPNKerasFeatureExtractor,
   }
 
   FASTER_RCNN_KERAS_FEATURE_EXTRACTOR_CLASS_MAP = {
